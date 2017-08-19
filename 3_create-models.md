@@ -17,7 +17,7 @@ INSTALLED_APPS = [
      'blog'
  	]	
 ```
-6. Create images folder in blog folder.
+6. Create images folder in \Django01\blog\blog folder.
 7. Open models.py file in folder \Django01\blog.
 8. Add the following script :
 ```python
