@@ -2,7 +2,7 @@
 
 We will create a news content on main page at our website.   
 
-1. Go to on Command Prompt type ```>cd Django01```
+1. Go to on Command Prompt type _cd Django01_
 2. Activate virtual environment with type ```>myvenv\Scripts\activate```
 3. Type ```>python manage.py startapp blog```
 4. Register site on Setting.py file in \Django01\mysite with add script :
