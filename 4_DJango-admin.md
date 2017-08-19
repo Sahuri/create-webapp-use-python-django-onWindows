@@ -8,6 +8,7 @@ with register class News on admin.py file.
 ```python
 from django.contrib import admin
 from .models import News
+
 admin.site.register(News)
 ``` 
 3. Activate virtual environment with type _myvenv\Scripts\activate_
