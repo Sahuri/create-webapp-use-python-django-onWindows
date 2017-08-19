@@ -2,9 +2,9 @@
 
 We will create a news content on main page at our website.   
 
-1. Go to on Command Prompt type *cd Django01*.
-2. Activate virtual environment with type *myvenv\Scripts\activate*.
-3. Type (python manage.py startapp blog).
+1. Go to on Command Prompt type ```>cd Django01```
+2. Activate virtual environment with type ```>myvenv\Scripts\activate```
+3. Type ```>python manage.py startapp blog```
 4. Register site on Setting.py file in \Django01\mysite with add script :
 ```python
 INSTALLED_APPS = [
@@ -38,5 +38,5 @@ INSTALLED_APPS = [
  	def __str__(self):
  		  return self.title
 ``` 
-8. Type *python manage.py makemigrations blog*
-9. Type *python manage.py migrate blog*
+8. Type ```>python manage.py makemigrations blog```
+9. Type ```>python manage.py migrate blog```
