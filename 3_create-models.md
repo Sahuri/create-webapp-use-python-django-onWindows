@@ -17,8 +17,9 @@ INSTALLED_APPS = [
      'blog'
  	]	
 ```
-6. Open models.py file in folder \Django01\blog.
-7. Add the following script :
+6. Create images folder in blog folder.
+7. Open models.py file in folder \Django01\blog.
+8. Add the following script :
 ```python
  from django.db import models
  from django.utils import timezone
@@ -26,7 +27,7 @@ INSTALLED_APPS = [
  class News(models.Model):
  	  author = models.ForeignKey('auth.User')
  	  title = models.CharField(max_length=200)
- 	  image=models.CharField(max_length=200)
+ 	  image=models.FileField(upload_to='images/')
  	  text = models.TextField()
  	  created_date = models.DateTimeField(default=timezone.now)
  	  published_date = models.DateTimeField(blank=True, null=True)
@@ -38,5 +39,5 @@ INSTALLED_APPS = [
  	def __str__(self):
  		  return self.title
 ``` 
-8. Type _python manage.py makemigrations blog_
-9. Type _python manage.py migrate blog_
+9. Type _python manage.py makemigrations blog_
+10. Type _python manage.py migrate blog_
