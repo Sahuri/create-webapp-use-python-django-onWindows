@@ -6,34 +6,37 @@ We will create a news content on main page at our website.
 2. Activate virtual environment with type *myvenv\Scripts\activate*.
 3. Type (python manage.py startapp blog).
 4. Register site on Setting.py file in \Django01\mysite with add script :
-> INSTALLED_APPS = [
->     'django.contrib.admin',
->     'django.contrib.auth',
->     'django.contrib.contenttypes',
->     'django.contrib.sessions',
->     'django.contrib.messages',
->     'django.contrib.staticfiles',
-> 	'blog'
-> 	]	
+```python
+INSTALLED_APPS = [
+     'django.contrib.admin',
+     'django.contrib.auth',
+     'django.contrib.contenttypes',
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
+ 	   'blog'
+ 	]	
+```
 6. Open models.py file in folder \Django01\blog.
 7. Add the following script :
-> from django.db import models
-> from django.utils import timezone
->
-> class News(models.Model):
-> 	author = models.ForeignKey('auth.User')
-> 	title = models.CharField(max_length=200)
-> 	image=models.CharField(max_length=200)
-> 	text = models.TextField()
-> 	created_date = models.DateTimeField(default=timezone.now)
-> 	published_date = models.DateTimeField(blank=True, null=True)
->
-> 	def publish(self):
-> 		self.published_date = timezone.now()
-> 		self.save()
-> 
-> 	def __str__(self):
-> 		return self.title
-> 
+```python
+ from django.db import models
+ from django.utils import timezone
+
+ class News(models.Model):
+ 	  author = models.ForeignKey('auth.User')
+ 	  title = models.CharField(max_length=200)
+ 	  image=models.CharField(max_length=200)
+ 	  text = models.TextField()
+ 	  created_date = models.DateTimeField(default=timezone.now)
+ 	  published_date = models.DateTimeField(blank=True, null=True)
+
+ 	def publish(self):
+ 		  self.published_date = timezone.now()
+ 		  self.save()
+ 
+ 	def __str__(self):
+ 		  return self.title
+``` 
 8. Type *python manage.py makemigrations blog*
 9. Type *python manage.py migrate blog*
