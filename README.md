@@ -1,4 +1,4 @@
-# create webapp use python-django on Windows
+# Create webapp use python-django on Windows
 please read md file step by step by number.
 
 ## You need installing on windows
