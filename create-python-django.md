@@ -1,6 +1,7 @@
 ## Step by step use Pyhton 3.6/Django on windows
 
-1. Create project folder sample Django01.
+1. Download [Python](https://www.python.org/downloads/) 
+Create project folder sample Django01.
 2. Open console with type (cd Django01).
 3. Create virtual environment with type (python -m venv myvenv).
 4. Activate virtual environment with type (myvenv\Scripts\activate).
