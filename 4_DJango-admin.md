@@ -13,5 +13,5 @@ admin.site.register(News)
 3. Activate virtual environment with type _myvenv\Scripts\activate_
 4. Type _python manage.py createsuperuser_ for create user and password at DJango admin.
 5. Run webapp with type _python manage.py runserver_
-6. Open browser type localhost:8000\admin on url.
-7. Login with superuser which we was create.
+6. Open browser type localhost:8000/admin on url.
+7. Login with superuser which we created.
