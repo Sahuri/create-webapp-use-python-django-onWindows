@@ -14,7 +14,7 @@ INSTALLED_APPS = [
      'django.contrib.sessions',
      'django.contrib.messages',
      'django.contrib.staticfiles',
- 	   'blog'
+ 	'blog'
  	]	
 ```
 6. Open models.py file in folder \Django01\blog.
