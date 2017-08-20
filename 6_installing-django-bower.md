@@ -40,5 +40,5 @@ BOWER_INSTALLED_APPS = (
 )
 ```
 6. To install package you can type _python manage.py bower install_ then enter.
-7. To find packages in bower you can type _python manage.py bower search_ <package name>.
+7. To find packages in bower you can type _python manage.py bower search [package name] _.
 8. You must run _python manage.py bower install_ every time you add a package. 
