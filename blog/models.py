@@ -4,7 +4,7 @@ from django.utils import timezone
 class News(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
-    image=models.FileField(upload_to='images/')
+    
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
