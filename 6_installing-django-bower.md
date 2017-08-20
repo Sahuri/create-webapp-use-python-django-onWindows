@@ -10,12 +10,12 @@ pip install nodeenv
 ```python
 pip install django-bower
 ```
-5.Copy and run the following script on command prompt to build nodeenv and install bower by npm.
+5.Copy and run the following script on command prompt to build nodeenv and install bower by NPM.
 ```python
 nodeenv --prebuilt -p
 npm install -g bower
 ```
-4. Add django-bower to INSTALLED_APPS in your settings.py in \Django01\mysite folder :
+4. Add 'djangobower' to INSTALLED_APPS in your settings.py in \Django01\mysite folder :
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    **'djangobower',**
+    'djangobower',
 ]
 ```
 5. Add staticfinder to STATICFILES_FINDERS, specify path to bower components root and bower installed apps :
@@ -40,5 +40,5 @@ BOWER_INSTALLED_APPS = (
 )
 ```
 6. To install package you can type _python manage.py bower install_ then enter.
-7. To find packages in bower you can type _python manage.py bower seach <package name>_.
+7. To find packages in bower you can type _python manage.py bower search_ <package name>.
 8. You must run _python manage.py bower install_ every time you add a package. 
