@@ -1,7 +1,7 @@
 ## Installing DJango-Bower for manage javascript library packages.
 
 1. Go to on Command Prompt type _cd Django01_. 
-2. Activate virtual environment _myvenv\SCripts\activate_.
+2. Activate virtual environment _myvenv\Scripts\activate_.
 3. Copy and run the following script on command prompt to install nodeenv package.
 ```python
 pip install nodeenv
